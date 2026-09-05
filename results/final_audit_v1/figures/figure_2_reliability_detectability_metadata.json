@@ -1,0 +1,20 @@
+{
+  "denominator": "338 replay configurations/point",
+  "figure_id": "figure_2_reliability_detectability",
+  "filters": "specified by title/source rows",
+  "generation_script_sha256": "7c930100de258dc47bb03404df9053711462db9b626373adaba32b3d5516c337",
+  "generation_script_version": "final-audit-generator-v1",
+  "metric_definitions": "x=total bit errors/total bits; y=FULL-29 replay-grouped AUC; A=adaptive, F=fixed, P=PREFIX",
+  "source_files": [
+    "results/adaptive_layout_strong_v1/auc_by_seed.csv",
+    "results/adaptive_layout_strong_v1/physical_results.csv"
+  ],
+  "source_hashes": {
+    "results/adaptive_layout_strong_v1/auc_by_seed.csv": "763385acd8c73317221ce28ec2c918f5003147aa2a959166fc1bf72974b13df7",
+    "results/adaptive_layout_strong_v1/physical_results.csv": "c282fc8ab022d1f1fd4a464356a7dfed85b9d4b9be64e36310b4fe7d315ac4a2"
+  },
+  "statistical_method": "frozen source aggregation; no refitting",
+  "system_config_scope": "fixed/adaptive alpha, PREFIX/five DISTRIBUTED layouts; no lines join points",
+  "system_spec_sha256": "b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038",
+  "title": "Reliability\u2013detectability tradeoff"
+}

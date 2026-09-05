@@ -1,0 +1,90 @@
+{
+  "policy_version": "adaptive-alpha-sender-local-v1",
+  "frozen": true,
+  "frozen_date": "2026-09-01",
+  "selection_partition": "development_only",
+  "validation_evaluated_at_freeze": false,
+  "candidate_id": "accuracy_q4_strong",
+  "feature_names": [
+    "accuracy"
+  ],
+  "feature_source": "single_osr_header_hit_counts",
+  "formula": "(300*count_300 + 100*count_100 + 50*count_50) / (300*(count_300 + count_100 + count_50 + count_miss))",
+  "threshold_rule": "development_accuracy_quantiles_[0.25,0.50,0.75]_linear",
+  "thresholds": [
+    0.8625284405822682,
+    0.935483870967742,
+    0.9768814158101473
+  ],
+  "alpha_values": [
+    20.0,
+    16.0,
+    12.0,
+    10.0
+  ],
+  "interval_semantics": "alpha_values[searchsorted(thresholds, accuracy, side='right')]",
+  "n_frames_per_bit": 8,
+  "payload_fraction": 0.075,
+  "placement": "prefix",
+  "pn_key": "adaptive-alpha-pn-v1",
+  "pn_convention": "deterministic_SHA256_keyed_numpy_PCG64_bipolar_sequence",
+  "message_seed": 42,
+  "message_convention": "stable_seed(42,replay_file,beatmap_hash,'payload-message');shorter_payload_is_prefix",
+  "hit_margin_ms": 5.0,
+  "primary_control": "fixed_15",
+  "development_replay_count": 611,
+  "development_beatmap_hashes": [
+    "09411a6ae1526eb9ba63d133a75d1cb3",
+    "0e38c93a039ce202e33e26afbf747565",
+    "0e82aece0f6a6224ac9f143bf55cefb8",
+    "102dde1dcce849c287b4c18692d54a6c",
+    "12442d02d25337b0086f6608d5f704b6",
+    "15a39b236fa8d0f62aa1dbf311654441",
+    "34236510dcd6d83c7bfbe2469228f882",
+    "36c3b29812fe872399463401b08e9a66",
+    "70b1226af3d8b76d859982b505c4ce11",
+    "7979904eb459f01f1f29108bb2b7fd2e",
+    "7da0b11e2e3b106ca2b6d7bc45e814c6",
+    "9c27752d2d46dc2f1dac8e2f548f7415",
+    "a13ff82d8b5f4fd269d51071568eb316",
+    "a1781fd4aa9648d017068c9776a9df86",
+    "a5fd70d8daeb64efd2e877249b1ebf2f",
+    "b26453d84db190dbf2b3b7419b154881",
+    "b8b8e3a4449dd5172c4f5b1c87f90b20",
+    "bf8f7319260411eddb5ee3ff8d51f71e",
+    "cc4cbed3121f14b7d59ccc3d8164ae71",
+    "d3e1b4ed8e7eb8ed5dbe65659f8ca47e",
+    "e3c294d071daf2021ad9945e3f7727dd",
+    "e4ad76f1a6b4e3bcfb1652d49159eff9",
+    "ffd17d76f588cd6c1f9c8ba6c7cf859d"
+  ],
+  "validation_replay_count": 338,
+  "validation_beatmap_hashes": [
+    "2bdf2122690af8d785d2e8c012ec8a39",
+    "2d0dfe625839ac940b346daa224706b5",
+    "2d687e5ee79f3862ad0c60651471cdcc",
+    "517f35a3949cc3b2ec788ef317452883",
+    "57e014e67b172d0de0b8ee0b839a1679",
+    "a05745bcaa5306df958b6ec09d1f4e77",
+    "a62bd44b5821b50a9ceae63cbe439d7b",
+    "d7e1002824cb188bf318326aa109469d",
+    "ea6f8e724a87cc12c8f72b7cf79bbfed",
+    "f7a0d4493e36945956b4b0dfd1c42dd3",
+    "f7f2350adc61e213473984ffa9f96e58"
+  ],
+  "input_checksums_sha256": {
+    "data/metadata/results_v3_clean.csv": "551703054575967c848a444bf8c5675437b0e806bf4b15b0d5cd2a8338798665",
+    "data/metadata/performance_groups.csv": "4db80beb4c6ebf4d92d5f524e834ef61c79e37e32fe016fe04203373a0bad783",
+    "results/adaptive_alpha_validation_v1/heldout_partition.csv": "87f488a156b34571cd7540e7314c0d4d1509e4000724cbb5944fa8b2e98efbfc",
+    "data/config/map_time_offsets.json": "877fb2adc803d9db6799628e65c4cd27e8ff9bf0fa456d0de9f3a27d41d2bf0f",
+    "results/sender_local_adaptive_v1/development_policy_candidates.csv": "c54aa8fa72e16c7260b97dbd212093ccf8de1e2f66930e2b180cdf52f5e8374a",
+    "results/sender_local_adaptive_v1/development_policy_paired.csv": "3c631861aa266b4d0603c586ff725aa9c27122322b30ea8fb5521f148465c20f"
+  },
+  "code_checksums_sha256": {
+    "osu_stego/stego/adaptive_alpha.py": "d88c9e80b66ca2873f4a061732a442f4f4939bc986288455803fd7106e6049e4",
+    "scripts/experiments/sender_local_common.py": "e926b3b5ca8f76c4e4c382b07ecf32c589ed968f67daa9c83170e5a2eb457299",
+    "scripts/experiments/run_sender_local_development.py": "a4bcd72dcb6c8a7afa9be4b81b0713eb5f3cd24143686f7ca0ab108a02d277ad"
+  },
+  "selection_rationale": "Among pre-registered accuracy-only candidates, this policy met BER<5%, had paired BER and physical RMS differences versus fixed_15 whose 95% CIs included zero, and had lower replay- and beatmap-grouped AUC on development. The simpler binary policy had statistically indistinguishable BER/AUC but clearly higher physical RMS energy than fixed_15.",
+  "methodological_status": "development-selected_sender-local_policy;held-out_validation_pending_at_freeze"
+}

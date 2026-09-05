@@ -1,0 +1,4 @@
+claim_id,metric,value,scope,system_spec_sha256,source_artifact
+DATA_001,active corpus,949 replays / 34 maps,post-quarantine,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038,data/metadata/results_v3_clean.csv
+MATCH_001,weighted match ratio,99.22%,active 949,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038,data/metadata/results_v3_clean.csv
+MATCH_001,median replay match ratio,100%,active 949,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038,data/metadata/results_v3_clean.csv

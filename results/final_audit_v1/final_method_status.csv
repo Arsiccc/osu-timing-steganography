@@ -1,0 +1,10 @@
+method_id,definition,status,reason,system_spec_sha256
+final_default,adaptive v2 + DISTRIBUTED + N=8 + normal 7.5% + SECDED + integrity + abstention,FINAL,deployment/research default,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+fixed_alpha,fixed alpha controls,CONTROL,comparison only,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+prefix,PREFIX placement,REJECTED,position-aware signature,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+uncoded,uncoded equal-useful/equal-physical controls,CONTROL,ECC comparisons only,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+hard_secded,SECDED without confidence integrity,CONTROL,higher wrong acceptance than final integrity mode,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+floor_12_5,12.5%-capped one-codeword floor,REJECTED,worse reliability on new corpus,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+host_aware_k4,host-aware PN K=4,REJECTED,gain requires unprotected PN-index side information; blind mode inadequate,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+message_screening,message screening/whitening,FUTURE WORK,not tested and not part of system,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+confidence_erasure,confidence-aware erasure decoding,REJECTED,silent miscorrections increased,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038

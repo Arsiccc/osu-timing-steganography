@@ -1,0 +1,7 @@
+osrparse==7.0.1
+slider==0.8.4
+numpy
+pandas
+requests
+scipy
+scikit-learn

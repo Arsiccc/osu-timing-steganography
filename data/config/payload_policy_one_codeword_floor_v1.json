@@ -1,0 +1,36 @@
+{
+  "abstention_semantics": "NO_CAPACITY creates no stego replay and contributes zero trusted useful bits",
+  "adaptive_alpha_policy_sha256": "ce689569361c4691e68d6be22bb400acbf881b70de78eea123af948cd0f69d9a",
+  "capacity_class_semantics": {
+    "FLOOR_12_5": "normal allocation has no complete word and C >= 64; transmit exactly one 8-bit word",
+    "NORMAL_7_5": "normal allocation has at least one complete word; preserve all complete normal words exactly",
+    "NO_CAPACITY": "normal allocation has no complete word and C <= 63; abstain"
+  },
+  "exact_boundary_semantics": {
+    "floor_first_permitted_capacity_bits": 64,
+    "floor_first_permitted_note_positions": 512,
+    "last_no_capacity_bits": 63,
+    "last_no_capacity_note_positions": 511,
+    "last_floor_capacity_bits": 106,
+    "last_floor_note_positions": 855,
+    "normal_first_eligible_capacity_bits": 107,
+    "normal_first_eligible_note_positions": 856
+  },
+  "floor_behavior": "only when normal allocation has fewer than 8 bits, request exactly 8 coded bits if 8/C <= 1/8 by exact integer comparison",
+  "floor_max_fraction": {
+    "denominator": 8,
+    "numerator": 1
+  },
+  "frozen_integrity_rule_sha256": "f49467d3b69e18b76ba88816d38270fc9c948583166c3a99d9c5ada2bc67ae42",
+  "layout": "distributed",
+  "n_frames_per_bit": 8,
+  "normal_allocation": "B=0 if C=0, otherwise max(1,floor(C*3/40)); transmit floor(B/8) complete words",
+  "normal_payload_fraction": {
+    "denominator": 40,
+    "numerator": 3
+  },
+  "pn_key_id": "54ca9c579c4d4b9d",
+  "policy_version": "payload-policy-one-codeword-floor-v1",
+  "secded_codeword_bits": 8,
+  "secded_useful_bits_per_codeword": 4
+}

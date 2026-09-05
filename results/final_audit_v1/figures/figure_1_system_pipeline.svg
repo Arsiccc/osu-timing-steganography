@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330"><rect width="1200" height="330" fill="white"/><text x="600" y="34" text-anchor="middle" font-family="Arial" font-size="24">Frozen end-to-end system</text><text x="310" y="75" text-anchor="middle" font-family="Arial" font-size="16" fill="#1261a0">SENDER</text><text x="900" y="75" text-anchor="middle" font-family="Arial" font-size="16" fill="#8b3f00">RECEIVER</text>
+<rect x="20" y="115" rx="8" width="112" height="70" fill="#d9ecff" stroke="#333"/><text x="76" y="145" text-anchor="middle" font-family="Arial" font-size="12">Clean .osr</text>
+<line x1="132" y1="150" x2="148" y2="150" stroke="#333"/><polygon points="148,150 140,145 140,155" fill="#333"/>
+<rect x="150" y="115" rx="8" width="112" height="70" fill="#d9ecff" stroke="#333"/><text x="206" y="145" text-anchor="middle" font-family="Arial" font-size="12">Align + residuals</text>
+<line x1="262" y1="150" x2="278" y2="150" stroke="#333"/><polygon points="278,150 270,145 270,155" fill="#333"/>
+<rect x="280" y="115" rx="8" width="112" height="70" fill="#d9ecff" stroke="#333"/><text x="336" y="145" text-anchor="middle" font-family="Arial" font-size="12">Adaptive α v2</text>
+<line x1="392" y1="150" x2="408" y2="150" stroke="#333"/><polygon points="408,150 400,145 400,155" fill="#333"/>
+<rect x="410" y="115" rx="8" width="112" height="70" fill="#d9ecff" stroke="#333"/><text x="466" y="145" text-anchor="middle" font-family="Arial" font-size="12">SECDED(8,4)</text>
+<line x1="522" y1="150" x2="538" y2="150" stroke="#333"/><polygon points="538,150 530,145 530,155" fill="#333"/>
+<rect x="540" y="115" rx="8" width="112" height="70" fill="#d9ecff" stroke="#333"/><text x="596" y="145" text-anchor="middle" font-family="Arial" font-size="12">DISTRIBUTED PN</text>
+<line x1="652" y1="150" x2="668" y2="150" stroke="#333"/><polygon points="668,150 660,145 660,155" fill="#333"/>
+<rect x="670" y="115" rx="8" width="112" height="70" fill="#d9ecff" stroke="#333"/><text x="726" y="145" text-anchor="middle" font-family="Arial" font-size="12">Anchor writer</text>
+<line x1="782" y1="150" x2="798" y2="150" stroke="#333"/><polygon points="798,150 790,145 790,155" fill="#333"/>
+<rect x="800" y="115" rx="8" width="112" height="70" fill="#ffe8cf" stroke="#333"/><text x="856" y="145" text-anchor="middle" font-family="Arial" font-size="12">Reload + decode</text>
+<line x1="912" y1="150" x2="928" y2="150" stroke="#333"/><polygon points="928,150 920,145 920,155" fill="#333"/>
+<rect x="930" y="115" rx="8" width="112" height="70" fill="#ffe8cf" stroke="#333"/><text x="986" y="145" text-anchor="middle" font-family="Arial" font-size="12">SECDED + integrity</text>
+<line x1="1042" y1="150" x2="1058" y2="150" stroke="#333"/><polygon points="1058,150 1050,145 1050,155" fill="#333"/>
+<rect x="1060" y="115" rx="8" width="112" height="70" fill="#ffe8cf" stroke="#333"/><text x="1116" y="145" text-anchor="middle" font-family="Arial" font-size="12">ACCEPT / REJECT</text>
+<text x="600" y="240" text-anchor="middle" font-family="Arial" font-size="14">Primary evidence uses the physical write → reload → rematch round trip</text></svg>

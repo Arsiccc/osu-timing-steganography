@@ -1,0 +1,7 @@
+{
+  "generator": "release-audit-v1",
+  "files": {
+    "input_manifest.json": "860d8fe7d7f95e5236de0c72921ab38916d1f329f73eaa58667c67906ff48df9",
+    "release_audit_report.md": "bb1de8742de1e99765255f55ffb07ba654d18f3960b9a13846929f04bb27d3a1"
+  }
+}

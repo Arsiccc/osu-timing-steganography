@@ -1,0 +1,32 @@
+{
+  "N": 8,
+  "adaptive_policy_sha256": "ce689569361c4691e68d6be22bb400acbf881b70de78eea123af948cd0f69d9a",
+  "codeword_decision_semantics": "baseline SECDED reject plus frozen observable rule",
+  "confidence_config_sha256": "f65fbfafc467604afc323a4050f02fdb34f5833d44d7cd6f5198eb98eb683289",
+  "confidence_threshold": null,
+  "design_physical_sha256": "998ab8b06b07a9fe0e395eca116bac433dcb259e835886b3e3b95ebbf57d76f7",
+  "design_selection_sha256": "bbf6eb56b3e6409e0f8f4301b4595e0882f9d732b368945f26792f64775d201c",
+  "design_words_sha256": "65d329ca8418972bd2047a884c0a746dd301a88629a0f941ca208076e5153b4a",
+  "development_partition_sha256": "87f488a156b34571cd7540e7314c0d4d1509e4000724cbb5944fa8b2e98efbfc",
+  "experiment_version": "ecc-integrity-rejection-v1",
+  "holdout_selection_created_before_physical_evaluation": true,
+  "holdout_selection_frame_sha256": "2a13b4f7cc6a3a003779b5f9ac9da26ec2c9ba567885866dff34beec022d1f14",
+  "holdout_selection_sha256": "2a13b4f7cc6a3a003779b5f9ac9da26ec2c9ba567885866dff34beec022d1f14",
+  "message_rejection_semantics": "reject entire message if any codeword rejects",
+  "payload_fraction": 0.075,
+  "rule_definition": "R1 plus reject corrected_single when syndrome-corrected bit has |C| strictly above the codeword minimum",
+  "rule_id": "R4_corrected_bit_not_minimum",
+  "rule_kind": "corrected_bit_not_minimum",
+  "selection_diagnostics": {
+    "beatmap_disjoint_available": 0,
+    "design_beatmaps": 15,
+    "development_eligible_replays": 389,
+    "overlapping_beatmaps": 13,
+    "remaining_replay_disjoint": 309,
+    "selected_beatmaps": 13,
+    "selected_replays": 80,
+    "selection_basis": "replay_disjoint_deterministic_hash; beatmap-disjoint infeasible"
+  },
+  "selection_objective": "lexicographic: minimize design silent WRONG_ACCEPT rate; then maximize CORRECT_ACCEPT rate; then minimize rejection rate",
+  "selection_partition": "development_design_only"
+}

@@ -1,0 +1,11 @@
+metric_or_claim,numerator,denominator,unit,interpretation,audit_status,system_spec_sha256
+MATCH_001,1055224,1063496,matched note / active note,weighted ratio; not mean replay ratio,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+DECODER_001,1986,47130,coded bit,total errors / total transmitted bits,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+ECC_001,72 successes difference,400,replay-layout configuration,paired equal-useful full-message recovery,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+INT_001 baseline,14,835,eligible replay × layout seed,WRONG_ACCEPT/config,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+INT_001 integrity,1,835,eligible replay × layout seed,WRONG_ACCEPT/config,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+FLOOR normal raw,153,6000,coded bit,errors/coded bits,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+FLOOR floor raw,106,1800,coded bit,errors/coded bits,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+PN mean,mean of 30 per-key weighted BERs,30,PN key,descriptive mean; each key BER is bit-weighted,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+MSG all families,family-specific errors,3744,coded bit per message family,do not average replay BER,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+classifier AUC,paired clean/stego scores,203 replay pairs or 135 unseen replay pairs,replay pair,clean/stego identity grouped,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038

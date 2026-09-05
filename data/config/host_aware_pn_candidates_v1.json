@@ -1,0 +1,91 @@
+{
+  "candidates": [
+    {
+      "effective_seed_32": 1437461067,
+      "index": 0,
+      "key": "host-aware-pn-selection-v1:host_aware_candidate_0:4205050d7ce22fa4a84a5f4fa4a4b55483bce83461ca51da1d1dc2fcdfc088a0",
+      "key_id": "55adea4b73a8d23c",
+      "label": "host_aware_candidate_0"
+    },
+    {
+      "effective_seed_32": 780542682,
+      "index": 1,
+      "key": "host-aware-pn-selection-v1:host_aware_candidate_1:a9d74e107edb7dfe5816dd0744d7a5770075a037c46ee52b22f14a08eeff2a23",
+      "key_id": "2e8622dafa1c0533",
+      "label": "host_aware_candidate_1"
+    },
+    {
+      "effective_seed_32": 4037698264,
+      "index": 2,
+      "key": "host-aware-pn-selection-v1:host_aware_candidate_2:2579a84d9fbaf13d0412170cbfb404cd1fcc9c88f75fb0da2938a5604e7ca361",
+      "key_id": "f0aa62d88bcfcf7a",
+      "label": "host_aware_candidate_2"
+    },
+    {
+      "effective_seed_32": 3711328512,
+      "index": 3,
+      "key": "host-aware-pn-selection-v1:host_aware_candidate_3:1abed5264c687b1a973f3a67c152da950978c860ed05a465b9a0edf3c7215e45",
+      "key_id": "dd366100aca1b324",
+      "label": "host_aware_candidate_3"
+    },
+    {
+      "effective_seed_32": 1469166847,
+      "index": 4,
+      "key": "host-aware-pn-selection-v1:host_aware_candidate_4:5373d3218eb4c1d44511dd6b805e6b70f4d59beddbefe3f06eda170e129112bb",
+      "key_id": "5791b4ffbc564492",
+      "label": "host_aware_candidate_4"
+    },
+    {
+      "effective_seed_32": 712562386,
+      "index": 5,
+      "key": "host-aware-pn-selection-v1:host_aware_candidate_5:01110d76e01190c139f0f0cfb8270480faf5099fa85770e9d2ed1c275ad4fd4c",
+      "key_id": "2a78d6d257277618",
+      "label": "host_aware_candidate_5"
+    },
+    {
+      "effective_seed_32": 2464223671,
+      "index": 6,
+      "key": "host-aware-pn-selection-v1:host_aware_candidate_6:713ae64877526144a5750e48b11e90ef458aa06335a29307ce456691e0986ac3",
+      "key_id": "92e111b7ba710f8e",
+      "label": "host_aware_candidate_6"
+    },
+    {
+      "effective_seed_32": 442273627,
+      "index": 7,
+      "key": "host-aware-pn-selection-v1:host_aware_candidate_7:24bced13e329029dd3df360581908392d539f648bef56117d5c2d2ccbc2b9ecc",
+      "key_id": "1a5c8f5b16f1c0f1",
+      "label": "host_aware_candidate_7"
+    }
+  ],
+  "derivation_rule": "key=version:label:SHA256(master|label)",
+  "effective_seed_collision_count": 0,
+  "master_material": "osu-stego|host-aware-pn-selection-v1|preregistered-2026-09-02",
+  "nested_candidate_subsets": {
+    "1": [
+      0
+    ],
+    "2": [
+      0,
+      1
+    ],
+    "4": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "8": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "pn_generator_semantics": "SHA256(str(key)) first 4 bytes big-endian -> NumPy default_rng",
+  "scientific_status": "frozen_before_holdout_physical_outcomes",
+  "version": "host-aware-pn-selection-v1"
+}

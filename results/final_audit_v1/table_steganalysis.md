@@ -1,0 +1,5 @@
+| claim_id | evaluation | FULL29_AUC | scope | system_spec_sha256 | source_artifact |
+| --- | --- | --- | --- | --- | --- |
+| DIST_002 | adaptive DISTRIBUTED unseen maps | 0.597–0.614 | five layouts; RF | b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038 | results/adaptive_layout_strong_v1/dev_to_validation_auc_by_seed.csv |
+| CLF_001 | replay-grouped classifier families | 0.603–0.635 | four classifiers | b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038 | results/classifier_family_robustness_v1/auc_replay_grouped.csv |
+| CLF_001 | unseen-map classifier families | 0.603–0.634 | four classifiers | b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038 | results/classifier_family_robustness_v1/auc_replay_grouped.csv |

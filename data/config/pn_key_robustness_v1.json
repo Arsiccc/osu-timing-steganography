@@ -1,0 +1,87 @@
+{
+  "N": 8,
+  "adaptive_policy_sha256": "ce689569361c4691e68d6be22bb400acbf881b70de78eea123af948cd0f69d9a",
+  "feature_schema_sha256": "945ee3d137c34054a3350c2fb6ef77d90631e091cbf1cc5527a14e760079ceff",
+  "historical_reference": {
+    "key": "adaptive-alpha-pn-v1",
+    "key_id": "54ca9c579c4d4b9d"
+  },
+  "integrity_rule_sha256": "f49467d3b69e18b76ba88816d38270fc9c948583166c3a99d9c5ada2bc67ae42",
+  "layout_key_ids": [
+    "791a5059278c4181",
+    "11907d641a46c816",
+    "2f9d229c1ae375ca",
+    "5085a07c93256c71",
+    "300fcbe4ce9ea185"
+  ],
+  "master_derivation_rule": "key = version:label:SHA256(master_material|label)",
+  "master_material": "osu-stego|pn-key-robustness-v1|preregistered-2026-09-02",
+  "message_seed": 42,
+  "new_keys": [
+    {
+      "index": 0,
+      "key": "pn-key-robustness-v1:pn_robustness_00:666cf8de5408f49ff0bd1caa17b287430c142e2845519a722113d9249f3a0ec0",
+      "key_id": "d2f32467fe661e61",
+      "label": "pn_robustness_00"
+    },
+    {
+      "index": 1,
+      "key": "pn-key-robustness-v1:pn_robustness_01:695bddee50abd6638707917b0b81a4a23cc4e54f2461f929e8082305282ff637",
+      "key_id": "5d4750f331170afe",
+      "label": "pn_robustness_01"
+    },
+    {
+      "index": 2,
+      "key": "pn-key-robustness-v1:pn_robustness_02:f3a4ca8c92a17a283991467326215827476aa76872ed5959b539f0fa9856cc5b",
+      "key_id": "12495ef2f851d80a",
+      "label": "pn_robustness_02"
+    },
+    {
+      "index": 3,
+      "key": "pn-key-robustness-v1:pn_robustness_03:33dbbfbf0993643d37d5981990c0a0fbee848d64c61eb141c22d8cfc20a0ed45",
+      "key_id": "4a2080410560c2f6",
+      "label": "pn_robustness_03"
+    },
+    {
+      "index": 4,
+      "key": "pn-key-robustness-v1:pn_robustness_04:0dbda24abcdba333fbc4f46569c1b7c3ff6bcb0a6f31c6341912e95824ed1491",
+      "key_id": "49c6ad68e9c9f50e",
+      "label": "pn_robustness_04"
+    },
+    {
+      "index": 5,
+      "key": "pn-key-robustness-v1:pn_robustness_05:8c9be93f58e0fe7ab61ed028d04cfb39fe768c022fe847c0cceb7beab92f037c",
+      "key_id": "1f8f20ce6b7d8e40",
+      "label": "pn_robustness_05"
+    },
+    {
+      "index": 6,
+      "key": "pn-key-robustness-v1:pn_robustness_06:4cf4412bdb69443d1e4facfae564fd962810b8f61f1387bed6d5d468d1e51f00",
+      "key_id": "13a99672380ad4b6",
+      "label": "pn_robustness_06"
+    },
+    {
+      "index": 7,
+      "key": "pn-key-robustness-v1:pn_robustness_07:f9faed15a6a80e4c620b0538a7f51b983bb48deb33b98f32345e003121b9650e",
+      "key_id": "d6349cbdd1e3abed",
+      "label": "pn_robustness_07"
+    },
+    {
+      "index": 8,
+      "key": "pn-key-robustness-v1:pn_robustness_08:d35f16244003135e0af6f0301c9f956e2df6b5becaa6f460d141d0ceb4e25e0d",
+      "key_id": "404821779df15b7a",
+      "label": "pn_robustness_08"
+    },
+    {
+      "index": 9,
+      "key": "pn-key-robustness-v1:pn_robustness_09:b63a022206f2c95b3173290461719218f22e8023e2418a18418f53fd36d92872",
+      "key_id": "373a75ff51cb8e4e",
+      "label": "pn_robustness_09"
+    }
+  ],
+  "payload_fraction": 0.075,
+  "pn_implementation": "SHA256(str(key)) first 4 bytes big-endian -> NumPy default_rng(PCG64)",
+  "pn_sequence_sha256": "ed2db0f1448a03524dd130dbe54c864bdc7c08b9b324fc0d5b7100f49e04ef38",
+  "scientific_status": "preregistered_before_any_pn_outcome",
+  "version": "pn-key-robustness-v1"
+}

@@ -1,0 +1,18 @@
+{
+  "denominator": "3,744 coded bits/family",
+  "figure_id": "figure_7_message_robustness",
+  "filters": "specified by title/source rows",
+  "generation_script_sha256": "7c930100de258dc47bb03404df9053711462db9b626373adaba32b3d5516c337",
+  "generation_script_version": "final-audit-generator-v1",
+  "metric_definitions": "total errors / coded bits",
+  "source_files": [
+    "results/message_content_robustness_v1/reliability_by_message.csv"
+  ],
+  "source_hashes": {
+    "results/message_content_robustness_v1/reliability_by_message.csv": "8cbc6019cdc327b1dc86f0f6c42ceb7da27c2533b5b6be18219b8cf4c2b4e500"
+  },
+  "statistical_method": "frozen source aggregation; no refitting",
+  "system_config_scope": "K=1 reused panel, one PN, three layouts",
+  "system_spec_sha256": "b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038",
+  "title": "Message-family weighted raw BER"
+}

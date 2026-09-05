@@ -1,0 +1,13 @@
+path,data_type,identifier_type,scientifically_required_for_public_reproduction?,aggregated_version_available?,proposed_public_status,reason
+results/final_audit_v1/dataset_registry.csv,aggregate corpus registry,SHA-256 set digests only,no,yes,PUBLIC_AGGREGATED,contains no direct username replay filename or user ID
+results/final_audit_v1/,canonical aggregate audit,no direct player identifier found,no,yes,SAFE_NO_PLAYER_DATA,public scan found only aggregate values and hashed corpus identities
+data/config/,configuration,beatmap hashes and method parameters,no,not applicable,SAFE_NO_PLAYER_DATA,no player identity fields found
+osu_stego/ and scripts/,source code,field names only,no,not applicable,SAFE_NO_PLAYER_DATA,code may process identifiers but contains no player records
+data/metadata/*.csv,processed replay metadata,"player names; replay filenames; beatmap hashes; performance data",yes for full artifact regeneration,yes,LOCAL_ONLY,2 files contain row-level player-linked records
+data/cache/rank_cache.json,API-derived rank cache,username-like dictionary keys,no,no,LOCAL_ONLY,3472 cached keys and ranks must not be published by default
+data/dataset/**/*.osr,active raw replay corpus,"embedded username/user ID/replay metadata",yes for physical experiment reruns,no,REVIEW_RIGHTS,949 third-party replay files
+data/excluded_bad_maps/**/*.osr,quarantined raw replay corpus,"embedded username/user ID/replay metadata",no,no,REVIEW_RIGHTS,51 excluded third-party replay files retained for provenance
+data/one_codeword_floor_validation_v1/**/*.osr,validation raw replay corpus,"embedded username/user ID/replay metadata",yes for validation reruns,no,REVIEW_RIGHTS,540 third-party replay files
+backups/**/*.osr,backup raw replay corpora,"embedded username/user ID/replay metadata",no,no,LOCAL_ONLY,1807 backup replay files with unresolved rights and privacy status
+results/**/*.csv excluding final_audit_v1,intermediate and historical result tables,"replay filenames and sometimes player/user fields",no,yes,LOCAL_ONLY,152 CSV files were conservatively flagged by identifier-column scan
+

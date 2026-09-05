@@ -1,0 +1,51 @@
+{
+  "approved_branch_manifests": [
+    {
+      "entries": 9,
+      "path": "results/capacity_coverage_v1/result_hashes.json",
+      "sha256": "04f0c6822f8ef7dd84d2593cf3b8ed66a63a4141bc5de33a0c70e13b5cd68984"
+    },
+    {
+      "entries": 22,
+      "path": "results/classifier_family_robustness_v1/result_hashes.json",
+      "sha256": "ee8bced4012e894d65b990baa8752ee00cea22d664a86acfd83e55f1329e5e4f"
+    },
+    {
+      "entries": 32,
+      "path": "results/host_aware_pn_selection_v1/result_hashes.json",
+      "sha256": "fb17605803e1f8c0663001b8c9cc21c013e1251757a12331439928560c91c26f"
+    },
+    {
+      "entries": 26,
+      "path": "results/message_content_robustness_v1/result_hashes.json",
+      "sha256": "c609e02070205d94939f63e402c2ab8dfa5033a27ad173f3b0d4c88bd21b32ec"
+    },
+    {
+      "entries": 13,
+      "path": "results/one_codeword_floor_pilot_v1/result_hashes.json",
+      "sha256": "6c34f7af934c173b698034cf1e1e0fa1a97a6cee8d864b4e0a1b06a400f2346f"
+    },
+    {
+      "entries": 32,
+      "path": "results/one_codeword_floor_validation_v1/result_hashes.json",
+      "sha256": "3c2674cfdb49cf9d06e626aca07f3d215ef5906d844f6d7167cb45c831273c70"
+    },
+    {
+      "entries": 39,
+      "path": "results/pn_key_robustness_phase2_v1/result_hashes.json",
+      "sha256": "1ad48b82f2db3c32ee217a437cd41a6dc7a5b3a93ec8348e8d0132f6f592ac16"
+    },
+    {
+      "entries": 27,
+      "path": "results/pn_key_robustness_v1/result_hashes.json",
+      "sha256": "8f4c7e971feda474c5b7dd55350720ca5d510622a540953d532c03d38c7f597a"
+    }
+  ],
+  "approved_manifest_count": 8,
+  "approved_manifest_entry_count": 200,
+  "frozen_final_audit_manifest_sha256": "6eed818fb1c3e428a649d46bf801b7e30408ba37a969af743558edad495afd36",
+  "frozen_finalizer_sha256": "7c930100de258dc47bb03404df9053711462db9b626373adaba32b3d5516c337",
+  "frozen_system_spec_sha256": "b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038",
+  "v2_finalizer_sha256": "9deed319aac4d4a2e4a4d5e478bc7bb77ceb44c0b5908763a825f1433f66e9fe",
+  "v2_generated_output_manifest_sha256": "c3972411994019cca0d0f8e9dee3f231ed001cf93a7db7b43ea4a3912a2780a1"
+}

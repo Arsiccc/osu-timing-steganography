@@ -1,0 +1,22 @@
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA_DIR = PROJECT_ROOT / "data"
+RESULTS_DIR = PROJECT_ROOT / "results"
+ARCHIVE_DIR = PROJECT_ROOT / "archive"
+BACKUPS_DIR = PROJECT_ROOT / "backups"
+
+DATASET_DIR = DATA_DIR / "dataset"
+EXCLUDED_BAD_MAPS_DIR = DATA_DIR / "excluded_bad_maps"
+METADATA_DIR = DATA_DIR / "metadata"
+CONFIG_DIR = DATA_DIR / "config"
+CACHE_DIR = DATA_DIR / "cache"
+
+BER_RESULTS_DIR = RESULTS_DIR / "ber"
+PILOT_BER_RESULTS_DIR = BER_RESULTS_DIR / "pilot"
+FULL_BER_RESULTS_DIR = BER_RESULTS_DIR / "full"
+STEGANALYSIS_RESULTS_DIR = RESULTS_DIR / "steganalysis"
+PERFORMANCE_RESULTS_DIR = RESULTS_DIR / "performance"
+MATCHING_RESULTS_DIR = RESULTS_DIR / "matching"
+VALIDATION_RESULTS_DIR = RESULTS_DIR / "validation"

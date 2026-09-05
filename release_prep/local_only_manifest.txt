@@ -1,0 +1,15 @@
+# Deterministic local-only scopes. Paths are repository-relative.
+# Individual raw replay/beatmap names are intentionally not reproduced here.
+AGENTS.md
+archive/**
+backups/**
+data/cache/**
+data/dataset/**
+data/excluded_bad_maps/**
+data/metadata/**
+data/one_codeword_floor_validation_v1/**
+github_cleanup_inventory.csv
+github_cleanup_report.md
+results/**
+!results/final_audit_v1/**
+!results/release_audit_v1/**

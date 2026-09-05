@@ -1,0 +1,9 @@
+group,origin,size_bytes,required_for_code_execution?,required_for_result_reproduction?,can_final_aggregate_results_be_published_without_it?,currently_intended_to_be_committed?,redistribution_status_known?,recommendation
+data/dataset/**/*.osr,"mixed historical corpus; broader Kaggle/o!rdr provenance noted in project scripts",80984634,no,yes,yes,no,no,UNKNOWN — MANUAL RIGHTS REVIEW
+data/dataset/**/*.osu,beatmap files paired with active replay corpus,7153155,no,yes,yes,no,no,UNKNOWN — MANUAL RIGHTS REVIEW
+data/excluded_bad_maps/**/*.osr,historical active-corpus source; exact redistribution grant not recorded,3586263,no,no,yes,no,no,UNKNOWN — MANUAL RIGHTS REVIEW
+data/one_codeword_floor_validation_v1/**/*.osr,local Kaggle o!rdr archive according to frozen corpus tooling,35608741,no,yes,yes,no,no,UNKNOWN — MANUAL RIGHTS REVIEW
+data/one_codeword_floor_validation_v1/**/*.osu,beatmap mirror according to frozen corpus tooling,2452986,no,yes,yes,no,no,UNKNOWN — MANUAL RIGHTS REVIEW
+backups/**/*.{osr;osu},local backups of raw replay and beatmap corpora,173228442,no,no,yes,no,no,UNKNOWN — MANUAL RIGHTS REVIEW
+data/metadata/*.csv and data/cache/*.json,"derived replay metadata and API/ranking cache; mixed local acquisition",475327,no,yes,yes,no,no,UNKNOWN — MANUAL RIGHTS REVIEW
+

@@ -1,0 +1,42 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system state
+.DS_Store
+.idea/
+.vscode/
+*~
+*.swp
+
+# Local research data and backups (redistribution/privacy review required)
+backups/
+data/cache/
+data/dataset/
+data/excluded_bad_maps/
+data/metadata/
+data/one_codeword_floor_validation_v1/
+
+# Historical workspace material is retained locally, not part of the release.
+archive/
+AGENTS.md
+github_cleanup_inventory.csv
+github_cleanup_report.md
+
+# Keep the canonical and release audits public; retain other matrices locally.
+results/*
+!results/final_audit_v1/
+!results/final_audit_v1/**
+!results/release_audit_v1/
+!results/release_audit_v1/**

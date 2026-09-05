@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560">
+<rect width="960" height="560" fill="white"/>
+<text x="480.0" y="34" text-anchor="middle" font-family="Arial" font-size="23">Message-family weighted raw BER</text>
+<text x="22" y="280.0" transform="rotate(-90 22 280.0)" text-anchor="middle" font-family="Arial" font-size="15">weighted raw BER</text>
+<line x1="100" y1="70" x2="100" y2="445" stroke="#222"/>
+<line x1="100" y1="445" x2="930" y2="445" stroke="#222"/>
+<line x1="100" y1="445.0" x2="930" y2="445.0" stroke="#ddd"/>
+<text x="90" y="450.0" text-anchor="end" font-family="Arial" font-size="12">0.000</text>
+<line x1="100" y1="370.0" x2="930" y2="370.0" stroke="#ddd"/>
+<text x="90" y="375.0" text-anchor="end" font-family="Arial" font-size="12">0.016</text>
+<line x1="100" y1="295.0" x2="930" y2="295.0" stroke="#ddd"/>
+<text x="90" y="300.0" text-anchor="end" font-family="Arial" font-size="12">0.033</text>
+<line x1="100" y1="220.0" x2="930" y2="220.0" stroke="#ddd"/>
+<text x="90" y="225.0" text-anchor="end" font-family="Arial" font-size="12">0.049</text>
+<line x1="100" y1="145.0" x2="930" y2="145.0" stroke="#ddd"/>
+<text x="90" y="150.0" text-anchor="end" font-family="Arial" font-size="12">0.066</text>
+<line x1="100" y1="70.0" x2="930" y2="70.0" stroke="#ddd"/>
+<text x="90" y="75.0" text-anchor="end" font-family="Arial" font-size="12">0.082</text>
+<rect x="131.5" y="181.2" width="102.9" height="263.8" fill="#7b5e35"/>
+<text x="183.0" y="174.2" text-anchor="middle" font-family="Arial" font-size="12">0.058</text>
+<text x="183.0" y="467" text-anchor="middle" font-family="Arial" font-size="12">all_one</text>
+<rect x="297.5" y="118.9" width="102.9" height="326.1" fill="#7b5e35"/>
+<text x="349.0" y="111.9" text-anchor="middle" font-family="Arial" font-size="12">0.071</text>
+<text x="349.0" y="467" text-anchor="middle" font-family="Arial" font-size="12">all_zero</text>
+<rect x="463.5" y="159.2" width="102.9" height="285.8" fill="#7b5e35"/>
+<text x="515.0" y="152.2" text-anchor="middle" font-family="Arial" font-size="12">0.062</text>
+<text x="515.0" y="467" text-anchor="middle" font-family="Arial" font-size="12">alternating</text>
+<rect x="629.5" y="147.0" width="102.9" height="298.0" fill="#7b5e35"/>
+<text x="681.0" y="140.0" text-anchor="middle" font-family="Arial" font-size="12">0.065</text>
+<text x="681.0" y="467" text-anchor="middle" font-family="Arial" font-size="12">random_a</text>
+<rect x="795.5" y="159.2" width="102.9" height="285.8" fill="#7b5e35"/>
+<text x="847.0" y="152.2" text-anchor="middle" font-family="Arial" font-size="12">0.062</text>
+<text x="847.0" y="467" text-anchor="middle" font-family="Arial" font-size="12">random_b</text>
+</svg>

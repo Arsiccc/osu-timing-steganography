@@ -1,0 +1,12 @@
+claim_or_result,method,resampling_unit,audit_note,status,system_spec_sha256
+DIST_001,replay-cluster bootstrap,replay_file,paired layout comparison,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+DIST_002,beatmap-cluster bootstrap,beatmap_hash,development to unseen maps,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+ECC_001,replay-cluster bootstrap,replay_file,all five layouts retained per replay,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+INT_001,replay-cluster bootstrap,replay_file,all five layouts retained,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+FLOOR_001,replay-cluster for reliability; beatmap-cluster for detector,metric-specific,do not substitute zero-event point estimate for risk bound,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+PN_001 mean,PN-key bootstrap,PN key,between-key mean CI,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+PN_001 system,two-level PN + replay bootstrap,PN key and replay cluster,"use estimate_observed, not legacy MC mean estimate field",CORRECTED,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+MSG_001,replay-cluster bootstrap,replay_file,three layouts kept together,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+CLF replay-grouped,replay-cluster bootstrap,replay_file,not map-level uncertainty,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+CLF unseen,beatmap-cluster bootstrap,beatmap_hash,correct unseen-map uncertainty,PASS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+historical generic beatmap-CV CI,replay bootstrap,replay_file,must not be described as map-level uncertainty,SUPERSEDED_FOR_MAP_CLAIMS,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038

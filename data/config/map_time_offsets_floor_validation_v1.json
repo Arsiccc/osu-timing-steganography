@@ -1,0 +1,208 @@
+{
+  "version": 2,
+  "method": "single fixed per-beatmap offset from normalized aggregate note-minus-raw-press histogram",
+  "offsets": {
+    "0754fe120fc5b508fb021177c1ea278a": 8249,
+    "2946411b3e85db6ae40b89661064c337": 4746,
+    "2c6b18605486f1738f41873c4c0fec5b": -1,
+    "6157f02d6d5702ba3e2899269a133195": -1,
+    "67cbf4cafec85f648122c0b2828e9d6b": -10,
+    "6bac59b483693dd078ec7ee7379bed2b": 2,
+    "883ee55c1be0cfbea213b7dc0bba4caa": 2,
+    "885dc758e44fe9416bdfa08682b2e671": 3,
+    "a69c9a110e4b28246ac10c966e517af6": 11389,
+    "b2259490acb444d0cb5f9c49cda74c9b": 2,
+    "b27eddc91e4fd4f913944f3438fbf286": 12073,
+    "b30959a30f75b5ca1a6b83461741365f": 1,
+    "b5076e7597a9e61af1e99e5b3afd0a20": 1,
+    "c3f3d6ba82ce48dfe2bfb049a184582c": 1,
+    "c807d50529eab6807981450dc3a9b8f6": 1,
+    "dc09a77fcc669806bd01d4742c5b2442": 5391,
+    "df4ba3c3515e57d7c4d8c7e57f0fe3b7": 12674,
+    "e9519abe574ffe8300286e564aa4e498": 20719,
+    "f921b88661a3886ed04f8f7fd3765f5a": 19686,
+    "fe8c7d3b9608c5a9b3ab01d480a09059": 3178
+  },
+  "diagnostics": {
+    "0754fe120fc5b508fb021177c1ea278a": {
+      "beatmap_file": "0754fe120fc5b508fb021177c1ea278a.osu",
+      "offset_ms": 8249,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 0.9983007646559049,
+      "max_match_ratio": 1.0
+    },
+    "2946411b3e85db6ae40b89661064c337": {
+      "beatmap_file": "2946411b3e85db6ae40b89661064c337.osu",
+      "offset_ms": 4746,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "2c6b18605486f1738f41873c4c0fec5b": {
+      "beatmap_file": "2c6b18605486f1738f41873c4c0fec5b.osu",
+      "offset_ms": -1,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "6157f02d6d5702ba3e2899269a133195": {
+      "beatmap_file": "6157f02d6d5702ba3e2899269a133195.osu",
+      "offset_ms": -1,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "67cbf4cafec85f648122c0b2828e9d6b": {
+      "beatmap_file": "67cbf4cafec85f648122c0b2828e9d6b.osu",
+      "offset_ms": -10,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 0.945041816009558,
+      "max_match_ratio": 1.0
+    },
+    "6bac59b483693dd078ec7ee7379bed2b": {
+      "beatmap_file": "6bac59b483693dd078ec7ee7379bed2b.osu",
+      "offset_ms": 2,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 0.9976798143851509,
+      "max_match_ratio": 1.0
+    },
+    "883ee55c1be0cfbea213b7dc0bba4caa": {
+      "beatmap_file": "883ee55c1be0cfbea213b7dc0bba4caa.osu",
+      "offset_ms": 2,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 0.8493975903614458,
+      "max_match_ratio": 1.0
+    },
+    "885dc758e44fe9416bdfa08682b2e671": {
+      "beatmap_file": "885dc758e44fe9416bdfa08682b2e671.osu",
+      "offset_ms": 3,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "a69c9a110e4b28246ac10c966e517af6": {
+      "beatmap_file": "a69c9a110e4b28246ac10c966e517af6.osu",
+      "offset_ms": 11389,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "b2259490acb444d0cb5f9c49cda74c9b": {
+      "beatmap_file": "b2259490acb444d0cb5f9c49cda74c9b.osu",
+      "offset_ms": 2,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "b27eddc91e4fd4f913944f3438fbf286": {
+      "beatmap_file": "b27eddc91e4fd4f913944f3438fbf286.osu",
+      "offset_ms": 12073,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "b30959a30f75b5ca1a6b83461741365f": {
+      "beatmap_file": "b30959a30f75b5ca1a6b83461741365f.osu",
+      "offset_ms": 1,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 0.9978308026030369,
+      "max_match_ratio": 1.0
+    },
+    "b5076e7597a9e61af1e99e5b3afd0a20": {
+      "beatmap_file": "b5076e7597a9e61af1e99e5b3afd0a20.osu",
+      "offset_ms": 1,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "c3f3d6ba82ce48dfe2bfb049a184582c": {
+      "beatmap_file": "c3f3d6ba82ce48dfe2bfb049a184582c.osu",
+      "offset_ms": 1,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "c807d50529eab6807981450dc3a9b8f6": {
+      "beatmap_file": "c807d50529eab6807981450dc3a9b8f6.osu",
+      "offset_ms": 1,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 0.9995782370307887,
+      "max_match_ratio": 1.0
+    },
+    "dc09a77fcc669806bd01d4742c5b2442": {
+      "beatmap_file": "dc09a77fcc669806bd01d4742c5b2442.osu",
+      "offset_ms": 5391,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "df4ba3c3515e57d7c4d8c7e57f0fe3b7": {
+      "beatmap_file": "df4ba3c3515e57d7c4d8c7e57f0fe3b7.osu",
+      "offset_ms": 12674,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 0.9987684729064039,
+      "max_match_ratio": 1.0
+    },
+    "e9519abe574ffe8300286e564aa4e498": {
+      "beatmap_file": "e9519abe574ffe8300286e564aa4e498.osu",
+      "offset_ms": 20719,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    },
+    "f921b88661a3886ed04f8f7fd3765f5a": {
+      "beatmap_file": "f921b88661a3886ed04f8f7fd3765f5a.osu",
+      "offset_ms": 19686,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 0.9981981981981982,
+      "max_match_ratio": 1.0
+    },
+    "fe8c7d3b9608c5a9b3ab01d480a09059": {
+      "beatmap_file": "fe8c7d3b9608c5a9b3ab01d480a09059.osu",
+      "offset_ms": 3178,
+      "calibration_replays": 12,
+      "num_replays": 12,
+      "median_match_ratio": 1.0,
+      "min_match_ratio": 1.0,
+      "max_match_ratio": 1.0
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "denominator": "2,520 coded bits/key on common design",
+  "figure_id": "figure_6_pn_robustness",
+  "filters": "specified by title/source rows",
+  "generation_script_sha256": "7c930100de258dc47bb03404df9053711462db9b626373adaba32b3d5516c337",
+  "generation_script_version": "final-audit-generator-v1",
+  "metric_definitions": "bit-weighted BER; red line historical PN",
+  "source_files": [
+    "results/pn_key_robustness_phase2_v1/combined_pn_distribution.csv"
+  ],
+  "source_hashes": {
+    "results/pn_key_robustness_phase2_v1/combined_pn_distribution.csv": "f667ee944891d906e1056a5328015f261a213195c12468b00f62ce89a8b33f10"
+  },
+  "statistical_method": "frozen source aggregation; no refitting",
+  "system_config_scope": "30 preregistered PN keys, three layouts",
+  "system_spec_sha256": "b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038",
+  "title": "Phase-2 PN-key BER distribution"
+}

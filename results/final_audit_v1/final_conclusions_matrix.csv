@@ -1,0 +1,15 @@
+question,answer,evidence,confidence,limitation,system_spec_sha256
+Does timing reconstruction work?,Yes on the retained corpus,MATCH_001,high,single map-offset model excluded 3 maps,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Is matching reliable?,"Yes, 99.22% weighted and 100% median replay ratio",MATCH_001,high,dataset-specific,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Does adaptive alpha help?,It reduced detectability point estimates; reliability/benefit is scope-dependent,ADAPT_001,moderate,older PREFIX validation,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Is PREFIX acceptable?,No as final placement,DIST_001,high,tested detector,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Does DISTRIBUTED improve stealth?,Yes relative to PREFIX under controlled FULL-29 tests,DIST_001;DIST_002,high,does not eliminate detection,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Does SECDED improve same-message recovery?,Yes,ECC_001,high,50% rate and physical overhead,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Does integrity reduce silent acceptance?,"Yes, observed",INT_001;INT_002,high,rejection/correct-accept cost,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Does higher payload floor work?,No; rejected as default,FLOOR_001,high,new corpus still same source family,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Does PN choice matter?,"Yes, moderate reliability sensitivity",PN_001,high for tested design,finite 32-bit seeds sampled,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Can PN screening be used?,Not in the frozen protocol,negative_results:host-aware,high,index synchronization unresolved,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Does message content matter?,Modestly for reliability,MSG_001,moderate,one PN and consumed panel,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Is detectability RF-specific?,No under tested families/features,CLF_001,high,not arbitrary adversaries,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Is final system undetectable?,No,DIST_002;CLF_001,high,AUC remains above chance,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038
+Is final system cryptographically secure?,No such claim is supported,security audit,high,PN is not encryption/authentication,b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038

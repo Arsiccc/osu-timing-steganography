@@ -1,0 +1,18 @@
+{
+  "denominator": "active shift energy",
+  "figure_id": "figure_3_position_signature",
+  "filters": "specified by title/source rows",
+  "generation_script_sha256": "7c930100de258dc47bb03404df9053711462db9b626373adaba32b3d5516c337",
+  "generation_script_version": "final-audit-generator-v1",
+  "metric_definitions": "pooled sum-squared-shift fraction; D averaged over layouts",
+  "source_files": [
+    "results/adaptive_layout_strong_v1/quarter_energy.csv"
+  ],
+  "source_hashes": {
+    "results/adaptive_layout_strong_v1/quarter_energy.csv": "9f62b70bfa1ace7a68a9cbe9ce1233af1abef58cbd2d7d5340f5beb557dfbb34"
+  },
+  "statistical_method": "frozen source aggregation; no refitting",
+  "system_config_scope": "validation adaptive placement",
+  "system_spec_sha256": "b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038",
+  "title": "Embedding energy by replay quarter"
+}

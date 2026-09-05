@@ -1,0 +1,16 @@
+{
+  "generator": "release-prep-v1",
+  "files": {
+    "data_distribution_inventory.csv": "1f760d13b36d153308d0cfe0c8fc1639d50c792b8d27ac2e0aa3e241ef69f72c",
+    "dependency_audit.md": "2240ecd3c9fc2623bd1106b42aaaa44e5ebf9b4ad23ccd980e1247073e88edf9",
+    "finalizer_bug_analysis.md": "64260c659f4e328028d5e71736ae08cd7f0bc91944c00b9a77b3dc1a1a0a22c4",
+    "local_only_manifest.txt": "077a947d91c4659beb1aeaf10f5aea5b331d234418a8b365f78dbe03bce803f1",
+    "manual_decisions.md": "992001713a395da841f6bd0a4ffc9c23bb2d47ca5cdaab30ce3416185651a53f",
+    "path_audit.md": "5cf1205fd4c514acf72e9f3a4ab61f329f37f75209595de85740b6f8d4f01176",
+    "player_data_inventory.csv": "817c0e3fa7eee3b8387e75e8c2117bcf0cf21b01b28c83f9a3ab8cff579d05f0",
+    "public_release_manifest.txt": "5ab2d171470df6cca7b99b18b33d6211bb546e2d694b609c9980606a42af205d",
+    "public_staging_test.md": "b28c7a13d576f3ff1d27e711791c59c81ae4b348d9a7d9f7bc413a6d012ca883",
+    "readme_requirements.md": "a1b1bd407710abf05fee4b1d484a6f5ae8364ff1e2b7a2aacb6e7b3ec9fc5725",
+    "release_prep_report.md": "9e2efa951657d87f9eba9a7dd593ca02f83e7dcf8c07cce0114e52c798656aa5"
+  }
+}

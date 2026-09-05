@@ -1,0 +1,133 @@
+{
+  "bootstrap": {
+    "generalization_unit": "beatmap_hash",
+    "iterations": 2000,
+    "paired_model_differences": true,
+    "replay_grouped_unit": "replay_file",
+    "seed": 20260902
+  },
+  "classifiers": {
+    "hist_gradient_boosting": {
+      "constructor": "HistGradientBoostingClassifier(random_state=fold_seed)",
+      "other_parameters": "sklearn 1.9.0 defaults"
+    },
+    "logistic_regression": {
+      "C": 1.0,
+      "max_iter": 2000,
+      "penalty": "l2",
+      "pipeline": [
+        "StandardScaler",
+        "LogisticRegression"
+      ],
+      "solver": "lbfgs",
+      "tol": 0.0001
+    },
+    "random_forest": {
+      "max_features": "sqrt",
+      "min_samples_leaf": 2,
+      "n_estimators": 300,
+      "n_jobs": 1
+    },
+    "rbf_svm": {
+      "C": 1.0,
+      "gamma": "scale",
+      "kernel": "rbf",
+      "pipeline": [
+        "StandardScaler",
+        "SVC"
+      ],
+      "probability": false
+    }
+  },
+  "cv": {
+    "fold_seed_rule": "historical shuffled_group_ids seed",
+    "folds": 5,
+    "group": "replay_file",
+    "same_fold_manifest_all_models": true
+  },
+  "feature_sets": {
+    "baseline": [
+      "variance",
+      "excess_kurtosis",
+      "autocorrelation_lag1"
+    ],
+    "full": [
+      "variance",
+      "excess_kurtosis",
+      "autocorrelation_lag1",
+      "skewness",
+      "iqr",
+      "mean_absolute_residual",
+      "quantile_10",
+      "quantile_25",
+      "quantile_50",
+      "quantile_75",
+      "quantile_90",
+      "autocorrelation_lag2",
+      "autocorrelation_lag4",
+      "autocorrelation_lag8",
+      "mean_absolute_first_difference",
+      "variance_first_difference",
+      "sign_change_rate",
+      "quarter_1_variance",
+      "quarter_1_autocorrelation_lag1",
+      "quarter_1_mean_absolute_residual",
+      "quarter_2_variance",
+      "quarter_2_autocorrelation_lag1",
+      "quarter_2_mean_absolute_residual",
+      "quarter_3_variance",
+      "quarter_3_autocorrelation_lag1",
+      "quarter_3_mean_absolute_residual",
+      "quarter_4_variance",
+      "quarter_4_autocorrelation_lag1",
+      "quarter_4_mean_absolute_residual"
+    ],
+    "position_only": [
+      "quarter_1_variance",
+      "quarter_1_autocorrelation_lag1",
+      "quarter_1_mean_absolute_residual",
+      "quarter_2_variance",
+      "quarter_2_autocorrelation_lag1",
+      "quarter_2_mean_absolute_residual",
+      "quarter_3_variance",
+      "quarter_3_autocorrelation_lag1",
+      "quarter_3_mean_absolute_residual",
+      "quarter_4_variance",
+      "quarter_4_autocorrelation_lag1",
+      "quarter_4_mean_absolute_residual"
+    ]
+  },
+  "generalization_scope": "development exact-system rows -> disjoint unseen-map NORMAL_7_5 exact-system rows",
+  "input_sha256": {
+    "development_features": "b7308a73209241110fddcf3a2a9ef6535e3685b3a1c1ee5e2c5ce5aacfc1cd66",
+    "feature_schema": "945ee3d137c34054a3350c2fb6ef77d90631e091cbf1cc5527a14e760079ceff",
+    "historical_auc": "763385acd8c73317221ce28ec2c918f5003147aa2a959166fc1bf72974b13df7",
+    "historical_features": "16be99ca1f84196c5fa8872d175a5963b1cc20a322e4bd9d6b25f4118d2086e1",
+    "unseen_features": "d616d67e531fd57527aadfd418b9a5ea4ab58824268a27e12a7daddeb08dd6d4"
+  },
+  "primary_physical_method": "adaptive distributed, N=8, normal 7.5%, SECDED(8,4), historical PN, five frozen layouts",
+  "prohibitions": [
+    "no hyperparameter search",
+    "no new features",
+    "no validation-based selection",
+    "no physical replay generation",
+    "no host-aware PN primary rows"
+  ],
+  "random_state_rule": "stable_seed(42,classifier-family-robustness-v1,scope,classifier,feature_set,fold_or_fit)",
+  "replay_grouped_scope": "pooled development plus unseen-new-map exact-system rows",
+  "scientific_status": "frozen_before_alternative_classifier_outcomes",
+  "score_outputs": {
+    "hist_gradient_boosting": "predict_proba[:,positive_class]",
+    "logistic_regression": "decision_function",
+    "random_forest": "predict_proba[:,positive_class]",
+    "rbf_svm": "decision_function"
+  },
+  "version": "classifier-family-robustness-v1",
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.14.7",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0"
+  }
+}

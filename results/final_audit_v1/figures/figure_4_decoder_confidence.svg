@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560">
+<rect width="960" height="560" fill="white"/>
+<text x="480.0" y="34" text-anchor="middle" font-family="Arial" font-size="23">Bit error probability by |correlation| decile</text>
+<text x="22" y="280.0" transform="rotate(-90 22 280.0)" text-anchor="middle" font-family="Arial" font-size="15">P(error)</text>
+<line x1="100" y1="70" x2="100" y2="445" stroke="#222"/>
+<line x1="100" y1="445" x2="930" y2="445" stroke="#222"/>
+<line x1="100" y1="445.0" x2="930" y2="445.0" stroke="#ddd"/>
+<text x="90" y="450.0" text-anchor="end" font-family="Arial" font-size="12">0.000</text>
+<line x1="100" y1="370.0" x2="930" y2="370.0" stroke="#ddd"/>
+<text x="90" y="375.0" text-anchor="end" font-family="Arial" font-size="12">0.060</text>
+<line x1="100" y1="295.0" x2="930" y2="295.0" stroke="#ddd"/>
+<text x="90" y="300.0" text-anchor="end" font-family="Arial" font-size="12">0.121</text>
+<line x1="100" y1="220.0" x2="930" y2="220.0" stroke="#ddd"/>
+<text x="90" y="225.0" text-anchor="end" font-family="Arial" font-size="12">0.181</text>
+<line x1="100" y1="145.0" x2="930" y2="145.0" stroke="#ddd"/>
+<text x="90" y="150.0" text-anchor="end" font-family="Arial" font-size="12">0.241</text>
+<line x1="100" y1="70.0" x2="930" y2="70.0" stroke="#ddd"/>
+<text x="90" y="75.0" text-anchor="end" font-family="Arial" font-size="12">0.302</text>
+<rect x="115.8" y="118.9" width="51.5" height="326.1" fill="#5b4b8a"/>
+<text x="141.5" y="111.9" text-anchor="middle" font-family="Arial" font-size="12">0.262</text>
+<text x="141.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+<rect x="198.8" y="373.5" width="51.5" height="71.5" fill="#5b4b8a"/>
+<text x="224.5" y="366.5" text-anchor="middle" font-family="Arial" font-size="12">0.058</text>
+<text x="224.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">2</text>
+<rect x="281.8" y="410.7" width="51.5" height="34.3" fill="#5b4b8a"/>
+<text x="307.5" y="403.7" text-anchor="middle" font-family="Arial" font-size="12">0.028</text>
+<text x="307.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">3</text>
+<rect x="364.8" y="427.1" width="51.5" height="17.9" fill="#5b4b8a"/>
+<text x="390.5" y="420.1" text-anchor="middle" font-family="Arial" font-size="12">0.014</text>
+<text x="390.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">4</text>
+<rect x="447.8" y="428.6" width="51.5" height="16.4" fill="#5b4b8a"/>
+<text x="473.5" y="421.6" text-anchor="middle" font-family="Arial" font-size="12">0.013</text>
+<text x="473.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">5</text>
+<rect x="530.8" y="428.1" width="51.5" height="16.9" fill="#5b4b8a"/>
+<text x="556.5" y="421.1" text-anchor="middle" font-family="Arial" font-size="12">0.014</text>
+<text x="556.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">6</text>
+<rect x="613.8" y="433.4" width="51.5" height="11.6" fill="#5b4b8a"/>
+<text x="639.5" y="426.4" text-anchor="middle" font-family="Arial" font-size="12">0.009</text>
+<text x="639.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">7</text>
+<rect x="696.8" y="432.1" width="51.5" height="12.9" fill="#5b4b8a"/>
+<text x="722.5" y="425.1" text-anchor="middle" font-family="Arial" font-size="12">0.010</text>
+<text x="722.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">8</text>
+<rect x="779.8" y="435.2" width="51.5" height="9.8" fill="#5b4b8a"/>
+<text x="805.5" y="428.2" text-anchor="middle" font-family="Arial" font-size="12">0.008</text>
+<text x="805.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">9</text>
+<rect x="862.8" y="438.4" width="51.5" height="6.6" fill="#5b4b8a"/>
+<text x="888.5" y="431.4" text-anchor="middle" font-family="Arial" font-size="12">0.005</text>
+<text x="888.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">10</text>
+</svg>

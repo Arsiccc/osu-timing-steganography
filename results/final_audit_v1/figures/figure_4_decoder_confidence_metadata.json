@@ -1,0 +1,18 @@
+{
+  "denominator": "4,713 coded bits/bin",
+  "figure_id": "figure_4_decoder_confidence",
+  "filters": "specified by title/source rows",
+  "generation_script_sha256": "7c930100de258dc47bb03404df9053711462db9b626373adaba32b3d5516c337",
+  "generation_script_version": "final-audit-generator-v1",
+  "metric_definitions": "empirical P(error | |C| bin)",
+  "source_files": [
+    "results/decoder_error_analysis_v1/correlation_error_bins.csv"
+  ],
+  "source_hashes": {
+    "results/decoder_error_analysis_v1/correlation_error_bins.csv": "352c0b95385fb6538fd602d859e111be79395b48816637716e25209ab6ca8ece"
+  },
+  "statistical_method": "frozen source aggregation; no refitting",
+  "system_config_scope": "five-layout physical validation",
+  "system_spec_sha256": "b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038",
+  "title": "Bit error probability by |correlation| decile"
+}

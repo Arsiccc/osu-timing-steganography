@@ -1,0 +1,18 @@
+{
+  "denominator": "not applicable",
+  "figure_id": "figure_1_system_pipeline",
+  "filters": "specified by title/source rows",
+  "generation_script_sha256": "7c930100de258dc47bb03404df9053711462db9b626373adaba32b3d5516c337",
+  "generation_script_version": "final-audit-generator-v1",
+  "metric_definitions": "process diagram",
+  "source_files": [
+    "results/final_audit_v1/final_system_spec.json"
+  ],
+  "source_hashes": {
+    "results/final_audit_v1/final_system_spec.json": "b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038"
+  },
+  "statistical_method": "frozen source aggregation; no refitting",
+  "system_config_scope": "final default",
+  "system_spec_sha256": "b99790fe0b39813e2c0a9777d7b98f05c69f2f3c5b43e3322a028bd78c0c7038",
+  "title": "Frozen end-to-end system"
+}

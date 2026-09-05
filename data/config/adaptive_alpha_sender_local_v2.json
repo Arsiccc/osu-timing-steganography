@@ -1,0 +1,51 @@
+{
+  "policy_version": "adaptive-alpha-sender-local-v2",
+  "frozen": true,
+  "supersedes_inference_policy": "adaptive-alpha-sender-local-v1",
+  "scientific_mapping_change": "none_on_the_949_replay_active_dataset",
+  "feature_names": [
+    "accuracy"
+  ],
+  "feature_source": "single_osr_header_hit_counts",
+  "formula": "(300*count_300 + 100*count_100 + 50*count_50) / (300*(count_300 + count_100 + count_50 + count_miss))",
+  "thresholds": [
+    0.8625284405822682,
+    0.935483870967742,
+    0.9768814158101473
+  ],
+  "threshold_ratios": [
+    {
+      "numerator": 8350645,
+      "denominator": 9681588
+    },
+    {
+      "numerator": 29,
+      "denominator": 31
+    },
+    {
+      "numerator": 6041359,
+      "denominator": 6184332
+    }
+  ],
+  "alpha_values": [
+    20.0,
+    16.0,
+    12.0,
+    10.0
+  ],
+  "interval_semantics": "advance_bin_when_accuracy_numerator*threshold_denominator >= threshold_numerator*accuracy_denominator",
+  "boundary_mapping": [
+    "exact 8350645/9681588 -> alpha 16",
+    "exact 29/31 -> alpha 12",
+    "exact 6041359/6184332 -> alpha 10"
+  ],
+  "threshold_derivation": "exact rational forms of the frozen development accuracy quartiles; q25 and q75 are exact midpoints of adjacent order statistics",
+  "n_frames_per_bit": 8,
+  "payload_fraction": 0.075,
+  "placement": "distributed",
+  "pn_key": "adaptive-alpha-pn-v1",
+  "message_seed": 42,
+  "hit_margin_ms": 5.0,
+  "primary_control": "frozen_v1_assignments",
+  "compatibility_note": "The two active-dataset replays with exact accuracy 29/31 map to alpha 12, matching frozen v1 cohort assignments. Float inference remains available only for legacy v1 reproduction."
+}

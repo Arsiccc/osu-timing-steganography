@@ -1,0 +1,136 @@
+{
+  "adaptive_alpha": {
+    "active_dataset_change_from_v1": "none",
+    "alpha_values_ms": [
+      20.0,
+      16.0,
+      12.0,
+      10.0
+    ],
+    "boundary": "exact threshold advances to next alpha bin",
+    "feature_source": "single_osr_header_hit_counts",
+    "formula": "(300*count_300 + 100*count_100 + 50*count_50) / (300*(count_300 + count_100 + count_50 + count_miss))",
+    "threshold_ratios": [
+      {
+        "denominator": 9681588,
+        "numerator": 8350645
+      },
+      {
+        "denominator": 31,
+        "numerator": 29
+      },
+      {
+        "denominator": 6184332,
+        "numerator": 6041359
+      }
+    ],
+    "version": "adaptive-alpha-sender-local-v2"
+  },
+  "carriers": {
+    "deduplication": "retain first note mapped to a physical keydown; later duplicates become NaN/-1",
+    "note_index_alignment_preserved": true
+  },
+  "decoder": {
+    "missing_carriers": "ignored without compacting note indices",
+    "statistic": "sum(valid residual * PN chip) per selected block",
+    "zero_correlation_bipolar_bit": 1
+  },
+  "ecc": {
+    "code": "extended Hamming SECDED(8,4)",
+    "hard_statuses": [
+      "clean",
+      "corrected_single",
+      "detected_double"
+    ],
+    "useful_rate": 0.5
+  },
+  "forbidden_final_variants": [
+    "PREFIX",
+    "12.5% one-codeword floor",
+    "host-aware PN selection",
+    "message screening",
+    "confidence-erasure decoding"
+  ],
+  "hit_window": {
+    "embedding_margin_ms": 5.0,
+    "osu_standard_50_window_ms": "200 - 10*effective_OD"
+  },
+  "implementation_sources": {
+    "osu_stego/matching/matcher.py": "b8c85bf0f30d1d5faaaed4f1eef608a37667db4a7a6e296e6fd0309433d27b55",
+    "osu_stego/parsing/beatmap_loader.py": "93305899817cb8b1aafee47e781480be561a6593eb9de357f3e93b27e4731c33",
+    "osu_stego/parsing/osr_writer.py": "23123cf982f835919cec102fd719ae3f613cd87c23a4b0b75cd3588257ed1857",
+    "osu_stego/parsing/replay_loader.py": "ade8ca27ff6bf095f99d119f6ddf6cdbb3c9059dddf266897c55fb5c607a2407",
+    "osu_stego/stego/adaptive_alpha.py": "59d119c1bccd7094417ce38b62fbe8c24474e7987ce15f93944ea1e20bf351cb",
+    "osu_stego/stego/carrier_utils.py": "f18928e7e38e62d848d49cd9ddaa869c29303c098c714c694ce83b031ddb6d60",
+    "osu_stego/stego/ecc.py": "31b269b6b931de18ce5e51f42322013c31747fa44be8188a6fbe85775587093a",
+    "osu_stego/stego/integrity.py": "db488fbda7fe0ce541f264b506612be258f196cc707be08dbca0639e9e0c3e5a",
+    "osu_stego/stego/payload_layout.py": "92d120e7115802630244554475ed0c65339a99acf0fcc5e2a1e5a2d370b38090",
+    "osu_stego/stego/pn_sequence.py": "ed2db0f1448a03524dd130dbe54c864bdc7c08b9b324fc0d5b7100f49e04ef38"
+  },
+  "integrity": {
+    "definition": "R1 plus reject corrected_single when syndrome-corrected bit has |C| strictly above the codeword minimum",
+    "ground_truth_used_for_decision": false,
+    "message_rule": "reject entire message if any codeword rejects",
+    "rule_id": "R4_corrected_bit_not_minimum"
+  },
+  "map_offset": {
+    "per_replay_note_calibration": false,
+    "scope": "one fixed integer offset per beatmap",
+    "source": "data/config/map_time_offsets.json"
+  },
+  "matching": {
+    "algorithm": "optimal monotone",
+    "crossings": false,
+    "objective": [
+      "maximize matches",
+      "minimize total absolute timing error"
+    ],
+    "one_to_one": true
+  },
+  "mods": {
+    "DoubleTime_HalfTime_timestamps": "no separate rescaling; stored replay/beatmap axes plus frozen map offset are used, as empirically validated",
+    "Easy_OD": "base_OD*0.5",
+    "HardRock_OD": "min(base_OD*1.4,10)"
+  },
+  "n_frames_per_bit": 8,
+  "payload_policy": {
+    "abstain": "if no complete SECDED codeword; equivalently C <= 106",
+    "allocation": "max(1,floor(C*3/40)), then retain complete 8-bit words",
+    "floor_extension": false,
+    "nominal_capacity_bits": "floor(note_positions/8)",
+    "normal_fraction": {
+      "denominator": 40,
+      "numerator": 3
+    }
+  },
+  "physical_primary_measurement": "clean .osr -> encode -> write -> reload -> rematch -> residuals -> decode",
+  "placement": {
+    "definition": "SHA-256-derived independent layout seed permutes all non-overlapping N-note blocks; take prefix",
+    "name": "DISTRIBUTED",
+    "nested_payloads": true,
+    "pn_key_independent": true,
+    "version": "payload-layout-v1"
+  },
+  "pn": {
+    "cryptographic_kdf": false,
+    "derivation": "SHA-256(key), first 4 bytes as unsigned big-endian seed, NumPy default_rng",
+    "effective_seed_bits": 32,
+    "screening": false
+  },
+  "replay_loader": {
+    "first_delta_forced_to_zero": false,
+    "rng_sentinel_delta": -12345,
+    "sentinel_is_gameplay": false,
+    "time_origin": "raw cumulative replay deltas"
+  },
+  "scientific_status": "frozen final default",
+  "system_version": "osu-stego-final-default-v1",
+  "writer": {
+    "chronology_conflicts": "drop full target shift to zero",
+    "cursor_only_frames_adjustable": true,
+    "global_cursor_monotonicity_required": false,
+    "name": "anchor-based writer",
+    "nontarget_keydowns_unchanged": true,
+    "target_keydowns_shifted": true
+  }
+}

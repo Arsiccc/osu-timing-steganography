@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560">
+<rect width="960" height="560" fill="white"/>
+<text x="480.0" y="34" text-anchor="middle" font-family="Arial" font-size="23">Hard SECDED vs integrity outcomes</text>
+<text x="22" y="280.0" transform="rotate(-90 22 280.0)" text-anchor="middle" font-family="Arial" font-size="15">configuration fraction</text>
+<line x1="100" y1="70" x2="100" y2="445" stroke="#222"/>
+<line x1="100" y1="445" x2="930" y2="445" stroke="#222"/>
+<line x1="100" y1="445.0" x2="930" y2="445.0" stroke="#ddd"/>
+<text x="90" y="450.0" text-anchor="end" font-family="Arial" font-size="12">0.000</text>
+<line x1="100" y1="370.0" x2="930" y2="370.0" stroke="#ddd"/>
+<text x="90" y="375.0" text-anchor="end" font-family="Arial" font-size="12">0.211</text>
+<line x1="100" y1="295.0" x2="930" y2="295.0" stroke="#ddd"/>
+<text x="90" y="300.0" text-anchor="end" font-family="Arial" font-size="12">0.423</text>
+<line x1="100" y1="220.0" x2="930" y2="220.0" stroke="#ddd"/>
+<text x="90" y="225.0" text-anchor="end" font-family="Arial" font-size="12">0.634</text>
+<line x1="100" y1="145.0" x2="930" y2="145.0" stroke="#ddd"/>
+<text x="90" y="150.0" text-anchor="end" font-family="Arial" font-size="12">0.845</text>
+<line x1="100" y1="70.0" x2="930" y2="70.0" stroke="#ddd"/>
+<text x="90" y="75.0" text-anchor="end" font-family="Arial" font-size="12">1.056</text>
+<rect x="126.3" y="118.9" width="85.8" height="326.1" fill="#2e8b57"/>
+<text x="169.2" y="111.9" text-anchor="middle" font-family="Arial" font-size="12">0.919</text>
+<text x="169.2" y="467" text-anchor="middle" font-family="Arial" font-size="12">Hard correct</text>
+<rect x="264.6" y="439.0" width="85.8" height="6.0" fill="#b33"/>
+<text x="307.5" y="432.0" text-anchor="middle" font-family="Arial" font-size="12">0.017</text>
+<text x="307.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">Hard silent</text>
+<rect x="402.9" y="422.0" width="85.8" height="23.0" fill="#d9902f"/>
+<text x="445.8" y="415.0" text-anchor="middle" font-family="Arial" font-size="12">0.065</text>
+<text x="445.8" y="467" text-anchor="middle" font-family="Arial" font-size="12">Hard rejection</text>
+<rect x="541.3" y="140.6" width="85.8" height="304.4" fill="#2e8b57"/>
+<text x="584.2" y="133.6" text-anchor="middle" font-family="Arial" font-size="12">0.857</text>
+<text x="584.2" y="467" text-anchor="middle" font-family="Arial" font-size="12">Integrity correct</text>
+<rect x="679.6" y="444.6" width="85.8" height="0.4" fill="#b33"/>
+<text x="722.5" y="437.6" text-anchor="middle" font-family="Arial" font-size="12">0.001</text>
+<text x="722.5" y="467" text-anchor="middle" font-family="Arial" font-size="12">Integrity silent</text>
+<rect x="818.0" y="394.8" width="85.8" height="50.2" fill="#d9902f"/>
+<text x="860.8" y="387.8" text-anchor="middle" font-family="Arial" font-size="12">0.141</text>
+<text x="860.8" y="467" text-anchor="middle" font-family="Arial" font-size="12">Integrity rejection</text>
+</svg>
